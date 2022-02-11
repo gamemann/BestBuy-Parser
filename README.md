@@ -33,7 +33,7 @@ ROBOTSTXT_OBEY = True
 # Best Buy Parser-specific settings.
 
 # The email's subject to send.
-MAIL_SUBJECT = "RTX 3080 TI Out Of Stock On Best Buy!"
+MAIL_SUBJECT = "RTX 3080 TI In Stock On Best Buy!"
 
 # Where the email is coming from.
 MAIN_FROM = "test@domain.com"
