@@ -94,10 +94,10 @@ class BbSpider(scrapy.Spider):
                 self.products[id] = 1
 
             # Button disable could mean sold out, etc.
-            if len(item.css('.price-block .c-button-disabled')) < 1:
+            if len(item.css('.price-block .c-button-disabled')) > 0:
                 # Make sure this item is marked as sold out in database.
                 if self.products[id] == 0:
-                    self.products[id] = 0
+                    self.products[id] = 1
 
                     self.cursor.execute("UPDATE `products` SET `soldout` = 1 WHERE `id` = '" + id + "';")
                     self.db.commit()
