@@ -1,0 +1,12 @@
+[Unit]
+Description=Best Buy Parser.
+After=network-online.target
+Requires=network-online.target
+
+[Service]
+WorkingDirectory=/usr/src/BestBuy-Parser/src/bestbuy_parser/bestbuy_parser/
+ExecStart=python3 parse.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
