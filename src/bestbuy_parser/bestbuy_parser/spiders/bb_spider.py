@@ -39,7 +39,7 @@ class BbSpider(scrapy.Spider):
         
     name = "bb"
     start_urls = [
-        'https://www.bestbuy.com/site/searchpage.jsp?_dyncharset=UTF-8&browsedCategory=abcat0507002&iht=n&ks=960&list=y&qp=gpusv_facet%3DGraphics%20Processing%20Unit%20(GPU)~NVIDIA%20GeForce%20RTX%203080%20Ti&sc=Global&st=categoryid%24abcat0507002&type=page&usc=All%20Categories'
+        'https://www.bestbuy.com/site/searchpage.jsp?st=rtx+3080+ti'
     ]
 
     products = {}
